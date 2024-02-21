@@ -310,3 +310,46 @@
   .copyright i{
     color: #f7a121;
   }
+  nav .fa-solid{
+    display: none;
+  }
+  /*--------------------mobile------------------*/
+  @media only screen and (max-width: 700px){
+    #header{
+      background-image: url(phnpp.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .header-text{
+      margin-top: 30%;
+      font-size: 16px;
+    }
+    .header-text h1{
+      font-size: 30px;
+    }
+    nav .fa-solid{
+      display: block;
+      font-size: 25px;
+    }
+    nav ul{
+      background: #0f0f0f;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: 0.5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 25px;
+    }
+    nav ul .fa-solid{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+  }
